@@ -1,0 +1,788 @@
+[
+  {
+    "icao": "EGLL", "iata": "LHR", "name": "London Heathrow Airport", "city": "London", "country": "United Kingdom", "countryCode": "GB", "region": "GB-ENG",
+    "latitude": 51.4700, "longitude": -0.4543, "elevationFt": 83, "timezone": "Europe/London", "type": "large_airport", "isPopular": true,
+    "runways": [
+      { "ident": "09L/27R", "leIdent": "09L", "heIdent": "27R", "lengthFt": 12802, "widthFt": 164, "surface": "ASPH", "lighted": true, "headingDegT": 89.4 },
+      { "ident": "09R/27L", "leIdent": "09R", "heIdent": "27L", "lengthFt": 12008, "widthFt": 164, "surface": "ASPH", "lighted": true, "headingDegT": 89.4 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Heathrow ATIS", "frequencyMhz": 128.075 },
+      { "type": "DEL", "description": "Heathrow Delivery", "frequencyMhz": 121.975 },
+      { "type": "GND", "description": "Heathrow Ground", "frequencyMhz": 121.9 },
+      { "type": "TWR", "description": "Heathrow Tower", "frequencyMhz": 118.5 },
+      { "type": "APP", "description": "Heathrow Approach", "frequencyMhz": 119.725 }
+    ],
+    "funFact": "Heathrow is the busiest airport in Europe by passenger traffic and operates one of the world's busiest single-runway-pair alternation systems, switching runway direction for departures and arrivals at 3pm daily to share noise fairly between local communities."
+  },
+  {
+    "icao": "KJFK", "iata": "JFK", "name": "John F. Kennedy International Airport", "city": "New York", "country": "United States", "countryCode": "US", "region": "US-NY",
+    "latitude": 40.6413, "longitude": -73.7781, "elevationFt": 13, "timezone": "America/New_York", "type": "large_airport", "isPopular": true,
+    "runways": [
+      { "ident": "04L/22R", "leIdent": "04L", "heIdent": "22R", "lengthFt": 11351, "widthFt": 150, "surface": "ASPH/CONC", "lighted": true, "headingDegT": 40.0 },
+      { "ident": "04R/22L", "leIdent": "04R", "heIdent": "22L", "lengthFt": 8400, "widthFt": 150, "surface": "ASPH/CONC", "lighted": true, "headingDegT": 40.0 },
+      { "ident": "13L/31R", "leIdent": "13L", "heIdent": "31R", "lengthFt": 10000, "widthFt": 150, "surface": "ASPH/CONC", "lighted": true, "headingDegT": 130.0 },
+      { "ident": "13R/31L", "leIdent": "13R", "heIdent": "31L", "lengthFt": 14511, "widthFt": 200, "surface": "ASPH/CONC", "lighted": true, "headingDegT": 130.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "JFK ATIS", "frequencyMhz": 128.725 },
+      { "type": "GND", "description": "JFK Ground", "frequencyMhz": 121.9 },
+      { "type": "TWR", "description": "JFK Tower", "frequencyMhz": 119.1 },
+      { "type": "APP", "description": "New York Approach", "frequencyMhz": 132.4 },
+      { "type": "DEP", "description": "New York Departure", "frequencyMhz": 135.9 }
+    ],
+    "funFact": "JFK's original 1948 name was New York International Airport, nicknamed 'Idlewild' after the golf course it was built on, and wasn't renamed to honor President Kennedy until December 1963."
+  },
+  {
+    "icao": "KLAX", "iata": "LAX", "name": "Los Angeles International Airport", "city": "Los Angeles", "country": "United States", "countryCode": "US", "region": "US-CA",
+    "latitude": 33.9416, "longitude": -118.4085, "elevationFt": 125, "timezone": "America/Los_Angeles", "type": "large_airport", "isPopular": true,
+    "runways": [
+      { "ident": "06L/24R", "leIdent": "06L", "heIdent": "24R", "lengthFt": 8926, "widthFt": 150, "surface": "CONC", "lighted": true, "headingDegT": 69.0 },
+      { "ident": "06R/24L", "leIdent": "06R", "heIdent": "24L", "lengthFt": 10285, "widthFt": 150, "surface": "ASPH", "lighted": true, "headingDegT": 69.0 },
+      { "ident": "07L/25R", "leIdent": "07L", "heIdent": "25R", "lengthFt": 11095, "widthFt": 150, "surface": "CONC", "lighted": true, "headingDegT": 69.0 },
+      { "ident": "07R/25L", "leIdent": "07R", "heIdent": "25L", "lengthFt": 12923, "widthFt": 150, "surface": "ASPH", "lighted": true, "headingDegT": 69.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "LAX ATIS", "frequencyMhz": 133.8 },
+      { "type": "GND", "description": "LAX Ground", "frequencyMhz": 121.65 },
+      { "type": "TWR", "description": "LAX Tower", "frequencyMhz": 120.95 },
+      { "type": "APP", "description": "SoCal Approach", "frequencyMhz": 124.9 }
+    ],
+    "funFact": "LAX's iconic Theme Building, with its spider-like white arches, was built in 1961 and once housed a rotating restaurant that offered a 360-degree view of the airfield."
+  },
+  {
+    "icao": "LFPG", "iata": "CDG", "name": "Paris Charles de Gaulle Airport", "city": "Paris", "country": "France", "countryCode": "FR", "region": "FR-IDF",
+    "latitude": 49.0097, "longitude": 2.5479, "elevationFt": 392, "timezone": "Europe/Paris", "type": "large_airport", "isPopular": true,
+    "runways": [
+      { "ident": "08L/26R", "leIdent": "08L", "heIdent": "26R", "lengthFt": 8858, "widthFt": 148, "surface": "CONC", "lighted": true, "headingDegT": 84.0 },
+      { "ident": "08R/26L", "leIdent": "08R", "heIdent": "26L", "lengthFt": 13829, "widthFt": 148, "surface": "CONC", "lighted": true, "headingDegT": 84.0 },
+      { "ident": "09L/27R", "leIdent": "09L", "heIdent": "27R", "lengthFt": 13780, "widthFt": 148, "surface": "CONC", "lighted": true, "headingDegT": 89.0 },
+      { "ident": "09R/27L", "leIdent": "09R", "heIdent": "27L", "lengthFt": 8858, "widthFt": 148, "surface": "CONC", "lighted": true, "headingDegT": 89.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "CDG ATIS", "frequencyMhz": 128.15 },
+      { "type": "GND", "description": "CDG Ground", "frequencyMhz": 121.8 },
+      { "type": "TWR", "description": "CDG Tower", "frequencyMhz": 119.25 },
+      { "type": "APP", "description": "Paris Approach", "frequencyMhz": 124.35 }
+    ],
+    "funFact": "Charles de Gaulle Airport's Terminal 1 was designed in 1974 as a futuristic 'space station' shape, with tube-like passenger walkways radiating out from a central drum, still considered an architectural landmark today."
+  },
+  {
+    "icao": "EHAM", "iata": "AMS", "name": "Amsterdam Airport Schiphol", "city": "Amsterdam", "country": "Netherlands", "countryCode": "NL", "region": "NL-NH",
+    "latitude": 52.3086, "longitude": 4.7639, "elevationFt": -11, "timezone": "Europe/Amsterdam", "type": "large_airport", "isPopular": true,
+    "runways": [
+      { "ident": "06/24", "leIdent": "06", "heIdent": "24", "lengthFt": 10826, "widthFt": 147, "surface": "ASPH", "lighted": true, "headingDegT": 58.0 },
+      { "ident": "09/27", "leIdent": "09", "heIdent": "27", "lengthFt": 11991, "widthFt": 147, "surface": "ASPH", "lighted": true, "headingDegT": 89.0 },
+      { "ident": "18R/36L", "leIdent": "18R", "heIdent": "36L", "lengthFt": 12467, "widthFt": 147, "surface": "ASPH", "lighted": true, "headingDegT": 183.0 },
+      { "ident": "18C/36C", "leIdent": "18C", "heIdent": "36C", "lengthFt": 11318, "widthFt": 147, "surface": "ASPH", "lighted": true, "headingDegT": 183.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Schiphol ATIS", "frequencyMhz": 135.45 },
+      { "type": "GND", "description": "Schiphol Ground", "frequencyMhz": 121.7 },
+      { "type": "TWR", "description": "Schiphol Tower", "frequencyMhz": 119.075 },
+      { "type": "APP", "description": "Schiphol Approach", "frequencyMhz": 119.55 }
+    ],
+    "funFact": "Schiphol sits about 11 feet below sea level and its name literally means 'ship hole', referencing the marshy polder where sunken ships were once said to be buried."
+  },
+  {
+    "icao": "OMDB", "iata": "DXB", "name": "Dubai International Airport", "city": "Dubai", "country": "United Arab Emirates", "countryCode": "AE", "region": "AE-DU",
+    "latitude": 25.2532, "longitude": 55.3657, "elevationFt": 62, "timezone": "Asia/Dubai", "type": "large_airport", "isPopular": true,
+    "runways": [
+      { "ident": "12L/30R", "leIdent": "12L", "heIdent": "30R", "lengthFt": 13124, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 120.0 },
+      { "ident": "12R/30L", "leIdent": "12R", "heIdent": "30L", "lengthFt": 14764, "widthFt": 148, "surface": "ASPH", "lighted": true, "headingDegT": 120.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Dubai ATIS", "frequencyMhz": 128.2 },
+      { "type": "GND", "description": "Dubai Ground", "frequencyMhz": 118.6 },
+      { "type": "TWR", "description": "Dubai Tower", "frequencyMhz": 118.75 },
+      { "type": "APP", "description": "Dubai Approach", "frequencyMhz": 124.9 }
+    ],
+    "funFact": "Dubai International has, for years, ranked as the world's busiest airport for international passenger traffic, largely thanks to Emirates using it as a 24-hour long-haul connecting hub between Europe, Asia, and Africa."
+  },
+  {
+    "icao": "WSSS", "iata": "SIN", "name": "Singapore Changi Airport", "city": "Singapore", "country": "Singapore", "countryCode": "SG", "region": "SG-",
+    "latitude": 1.3644, "longitude": 103.9915, "elevationFt": 22, "timezone": "Asia/Singapore", "type": "large_airport", "isPopular": true,
+    "runways": [
+      { "ident": "02L/20R", "leIdent": "02L", "heIdent": "20R", "lengthFt": 13123, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 20.0 },
+      { "ident": "02C/20C", "leIdent": "02C", "heIdent": "20C", "lengthFt": 13123, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 20.0 },
+      { "ident": "02R/20L", "leIdent": "02R", "heIdent": "20L", "lengthFt": 10990, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 20.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Changi ATIS", "frequencyMhz": 128.5 },
+      { "type": "GND", "description": "Changi Ground", "frequencyMhz": 121.9 },
+      { "type": "TWR", "description": "Changi Tower", "frequencyMhz": 118.6 },
+      { "type": "APP", "description": "Singapore Approach", "frequencyMhz": 120.3 }
+    ],
+    "funFact": "Singapore Changi Airport is famous for Jewel Changi Airport and its indoor waterfall, the Rain Vortex, which at roughly 40 metres is the tallest indoor waterfall in the world."
+  },
+  {
+    "icao": "RJTT", "iata": "HND", "name": "Tokyo Haneda Airport", "city": "Tokyo", "country": "Japan", "countryCode": "JP", "region": "JP-13",
+    "latitude": 35.5494, "longitude": 139.7798, "elevationFt": 21, "timezone": "Asia/Tokyo", "type": "large_airport", "isPopular": true,
+    "runways": [
+      { "ident": "04/22", "leIdent": "04", "heIdent": "22", "lengthFt": 9840, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 40.0 },
+      { "ident": "05/23", "leIdent": "05", "heIdent": "23", "lengthFt": 8202, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 50.0 },
+      { "ident": "16L/34R", "leIdent": "16L", "heIdent": "34R", "lengthFt": 10827, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 160.0 },
+      { "ident": "16R/34L", "leIdent": "16R", "heIdent": "34L", "lengthFt": 9843, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 160.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Haneda ATIS", "frequencyMhz": 128.8 },
+      { "type": "GND", "description": "Haneda Ground", "frequencyMhz": 121.7 },
+      { "type": "TWR", "description": "Haneda Tower", "frequencyMhz": 118.1 },
+      { "type": "APP", "description": "Tokyo Approach", "frequencyMhz": 119.1 }
+    ],
+    "funFact": "Haneda's Terminal 3 features a reconstructed Edo-period townscape called 'Edo Koji', complete with a wooden bridge and traditional shopfronts, designed to feel like stepping into old Tokyo before a flight."
+  },
+  {
+    "icao": "YSSY", "iata": "SYD", "name": "Sydney Kingsford Smith Airport", "city": "Sydney", "country": "Australia", "countryCode": "AU", "region": "AU-NSW",
+    "latitude": -33.9399, "longitude": 151.1753, "elevationFt": 21, "timezone": "Australia/Sydney", "type": "large_airport", "isPopular": true,
+    "runways": [
+      { "ident": "07/25", "leIdent": "07", "heIdent": "25", "lengthFt": 8202, "widthFt": 148, "surface": "ASPH", "lighted": true, "headingDegT": 70.0 },
+      { "ident": "16L/34R", "leIdent": "16L", "heIdent": "34R", "lengthFt": 8199, "widthFt": 148, "surface": "ASPH", "lighted": true, "headingDegT": 160.0 },
+      { "ident": "16R/34L", "leIdent": "16R", "heIdent": "34L", "lengthFt": 12999, "widthFt": 148, "surface": "ASPH", "lighted": true, "headingDegT": 160.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Sydney ATIS", "frequencyMhz": 118.55 },
+      { "type": "GND", "description": "Sydney Ground", "frequencyMhz": 121.7 },
+      { "type": "TWR", "description": "Sydney Tower", "frequencyMhz": 120.5 },
+      { "type": "APP", "description": "Sydney Approach", "frequencyMhz": 124.7 }
+    ],
+    "funFact": "Sydney Airport is named after Sir Charles Kingsford Smith, the aviator who made the first trans-Pacific flight from the US to Australia in 1928, and is one of the oldest continuously operating airports in the world, dating to 1920."
+  },
+  {
+    "icao": "EDDF", "iata": "FRA", "name": "Frankfurt Airport", "city": "Frankfurt", "country": "Germany", "countryCode": "DE", "region": "DE-HE",
+    "latitude": 50.0379, "longitude": 8.5622, "elevationFt": 364, "timezone": "Europe/Berlin", "type": "large_airport", "isPopular": true,
+    "runways": [
+      { "ident": "07C/25C", "leIdent": "07C", "heIdent": "25C", "lengthFt": 13123, "widthFt": 197, "surface": "CONC", "lighted": true, "headingDegT": 70.0 },
+      { "ident": "07L/25R", "leIdent": "07L", "heIdent": "25R", "lengthFt": 13123, "widthFt": 148, "surface": "CONC", "lighted": true, "headingDegT": 70.0 },
+      { "ident": "18", "leIdent": "18", "heIdent": null, "lengthFt": 8996, "widthFt": 148, "surface": "CONC", "lighted": true, "headingDegT": 180.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Frankfurt ATIS", "frequencyMhz": 118.025 },
+      { "type": "GND", "description": "Frankfurt Ground", "frequencyMhz": 121.9 },
+      { "type": "TWR", "description": "Frankfurt Tower", "frequencyMhz": 119.9 },
+      { "type": "APP", "description": "Frankfurt Approach", "frequencyMhz": 120.8 }
+    ],
+    "funFact": "Frankfurt Airport has its own dedicated long-distance railway station beneath the terminals, letting passengers step off a high-speed ICE train from across Europe directly into the airport without ever going outside."
+  },
+  {
+    "icao": "KORD", "iata": "ORD", "name": "Chicago O'Hare International Airport", "city": "Chicago", "country": "United States", "countryCode": "US", "region": "US-IL",
+    "latitude": 41.9786, "longitude": -87.9048, "elevationFt": 672, "timezone": "America/Chicago", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "10L/28R", "leIdent": "10L", "heIdent": "28R", "lengthFt": 7967, "widthFt": 150, "surface": "CONC", "lighted": true, "headingDegT": 100.0 },
+      { "ident": "10C/28C", "leIdent": "10C", "heIdent": "28C", "lengthFt": 11245, "widthFt": 150, "surface": "CONC", "lighted": true, "headingDegT": 100.0 },
+      { "ident": "09L/27R", "leIdent": "09L", "heIdent": "27R", "lengthFt": 7500, "widthFt": 150, "surface": "CONC", "lighted": true, "headingDegT": 90.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "O'Hare ATIS", "frequencyMhz": 135.3 },
+      { "type": "GND", "description": "O'Hare Ground", "frequencyMhz": 121.75 },
+      { "type": "TWR", "description": "O'Hare Tower", "frequencyMhz": 120.7 },
+      { "type": "APP", "description": "Chicago Approach", "frequencyMhz": 124.2 }
+    ],
+    "funFact": "O'Hare's ICAO code KORD and IATA code ORD both trace back to its original name, Orchard Field, a small airstrip that predates the airport's 1949 renaming after WWII naval aviator Edward O'Hare."
+  },
+  {
+    "icao": "KATL", "iata": "ATL", "name": "Hartsfield-Jackson Atlanta International Airport", "city": "Atlanta", "country": "United States", "countryCode": "US", "region": "US-GA",
+    "latitude": 33.6407, "longitude": -84.4277, "elevationFt": 1026, "timezone": "America/New_York", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "08L/26R", "leIdent": "08L", "heIdent": "26R", "lengthFt": 9000, "widthFt": 150, "surface": "CONC", "lighted": true, "headingDegT": 80.0 },
+      { "ident": "08R/26L", "leIdent": "08R", "heIdent": "26L", "lengthFt": 9001, "widthFt": 150, "surface": "CONC", "lighted": true, "headingDegT": 80.0 },
+      { "ident": "09L/27R", "leIdent": "09L", "heIdent": "27R", "lengthFt": 11889, "widthFt": 150, "surface": "CONC", "lighted": true, "headingDegT": 90.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Atlanta ATIS", "frequencyMhz": 133.4 },
+      { "type": "GND", "description": "Atlanta Ground", "frequencyMhz": 121.65 },
+      { "type": "TWR", "description": "Atlanta Tower", "frequencyMhz": 119.5 },
+      { "type": "APP", "description": "Atlanta Approach", "frequencyMhz": 125.325 }
+    ],
+    "funFact": "Hartsfield-Jackson has been one of the world's busiest airports by passenger traffic for most of the last two decades, in part because Delta uses it as a mega-hub with five parallel runways operating simultaneously."
+  },
+  {
+    "icao": "KSFO", "iata": "SFO", "name": "San Francisco International Airport", "city": "San Francisco", "country": "United States", "countryCode": "US", "region": "US-CA",
+    "latitude": 37.6213, "longitude": -122.3790, "elevationFt": 13, "timezone": "America/Los_Angeles", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "10L/28R", "leIdent": "10L", "heIdent": "28R", "lengthFt": 11870, "widthFt": 200, "surface": "CONC", "lighted": true, "headingDegT": 100.0 },
+      { "ident": "10R/28L", "leIdent": "10R", "heIdent": "28L", "lengthFt": 11381, "widthFt": 200, "surface": "CONC", "lighted": true, "headingDegT": 100.0 },
+      { "ident": "01L/19R", "leIdent": "01L", "heIdent": "19R", "lengthFt": 7650, "widthFt": 200, "surface": "CONC", "lighted": true, "headingDegT": 10.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "SFO ATIS", "frequencyMhz": 118.85 },
+      { "type": "GND", "description": "SFO Ground", "frequencyMhz": 121.8 },
+      { "type": "TWR", "description": "SFO Tower", "frequencyMhz": 120.5 },
+      { "type": "APP", "description": "NorCal Approach", "frequencyMhz": 135.1 }
+    ],
+    "funFact": "SFO's two closely-spaced parallel runway pairs are famous among pilots for requiring visual simultaneous approach procedures in good weather, since the runways are too close together for independent instrument approaches."
+  },
+  {
+    "icao": "KDEN", "iata": "DEN", "name": "Denver International Airport", "city": "Denver", "country": "United States", "countryCode": "US", "region": "US-CO",
+    "latitude": 39.8617, "longitude": -104.6731, "elevationFt": 5431, "timezone": "America/Denver", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "16L/34R", "leIdent": "16L", "heIdent": "34R", "lengthFt": 12000, "widthFt": 150, "surface": "CONC", "lighted": true, "headingDegT": 160.0 },
+      { "ident": "16R/34L", "leIdent": "16R", "heIdent": "34L", "lengthFt": 12000, "widthFt": 150, "surface": "CONC", "lighted": true, "headingDegT": 160.0 },
+      { "ident": "17L/35R", "leIdent": "17L", "heIdent": "35R", "lengthFt": 12000, "widthFt": 150, "surface": "CONC", "lighted": true, "headingDegT": 170.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Denver ATIS", "frequencyMhz": 134.1 },
+      { "type": "GND", "description": "Denver Ground", "frequencyMhz": 121.7 },
+      { "type": "TWR", "description": "Denver Tower", "frequencyMhz": 120.65 },
+      { "type": "APP", "description": "Denver Approach", "frequencyMhz": 124.0 }
+    ],
+    "funFact": "Denver International is the largest airport in North America by land area, roughly the size of the city of Manhattan, giving it room for six full-length runways including one over 16,000 feet long."
+  },
+  {
+    "icao": "KSEA", "iata": "SEA", "name": "Seattle-Tacoma International Airport", "city": "Seattle", "country": "United States", "countryCode": "US", "region": "US-WA",
+    "latitude": 47.4502, "longitude": -122.3088, "elevationFt": 433, "timezone": "America/Los_Angeles", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "16L/34R", "leIdent": "16L", "heIdent": "34R", "lengthFt": 9426, "widthFt": 150, "surface": "ASPH", "lighted": true, "headingDegT": 160.0 },
+      { "ident": "16C/34C", "leIdent": "16C", "heIdent": "34C", "lengthFt": 11901, "widthFt": 150, "surface": "ASPH", "lighted": true, "headingDegT": 160.0 },
+      { "ident": "16R/34L", "leIdent": "16R", "heIdent": "34L", "lengthFt": 8500, "widthFt": 150, "surface": "ASPH", "lighted": true, "headingDegT": 160.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Sea-Tac ATIS", "frequencyMhz": 118.0 },
+      { "type": "GND", "description": "Sea-Tac Ground", "frequencyMhz": 121.7 },
+      { "type": "TWR", "description": "Sea-Tac Tower", "frequencyMhz": 119.9 },
+      { "type": "APP", "description": "Seattle Approach", "frequencyMhz": 119.2 }
+    ],
+    "funFact": "Sea-Tac was one of the first US airports to build a third parallel runway specifically to reduce delays caused by the Pacific Northwest's frequent low-cloud and rain days, opening it in 2008 after nearly two decades of planning."
+  },
+  {
+    "icao": "KMIA", "iata": "MIA", "name": "Miami International Airport", "city": "Miami", "country": "United States", "countryCode": "US", "region": "US-FL",
+    "latitude": 25.7959, "longitude": -80.2870, "elevationFt": 8, "timezone": "America/New_York", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "08L/26R", "leIdent": "08L", "heIdent": "26R", "lengthFt": 10506, "widthFt": 150, "surface": "ASPH", "lighted": true, "headingDegT": 80.0 },
+      { "ident": "08R/26L", "leIdent": "08R", "heIdent": "26L", "lengthFt": 13016, "widthFt": 150, "surface": "ASPH", "lighted": true, "headingDegT": 80.0 },
+      { "ident": "09/27", "leIdent": "09", "heIdent": "27", "lengthFt": 9354, "widthFt": 150, "surface": "ASPH", "lighted": true, "headingDegT": 90.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Miami ATIS", "frequencyMhz": 132.35 },
+      { "type": "GND", "description": "Miami Ground", "frequencyMhz": 121.8 },
+      { "type": "TWR", "description": "Miami Tower", "frequencyMhz": 118.3 },
+      { "type": "APP", "description": "Miami Approach", "frequencyMhz": 128.35 }
+    ],
+    "funFact": "Miami International handles more international air freight, largely flowers and perishables from Latin America, than any other U.S. airport, making it a critical link in the Americas' cold-chain supply network."
+  },
+  {
+    "icao": "KIAH", "iata": "IAH", "name": "George Bush Intercontinental Airport", "city": "Houston", "country": "United States", "countryCode": "US", "region": "US-TX",
+    "latitude": 29.9902, "longitude": -95.3368, "elevationFt": 97, "timezone": "America/Chicago", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "08L/26R", "leIdent": "08L", "heIdent": "26R", "lengthFt": 9403, "widthFt": 150, "surface": "CONC", "lighted": true, "headingDegT": 80.0 },
+      { "ident": "09/27", "leIdent": "09", "heIdent": "27", "lengthFt": 10000, "widthFt": 150, "surface": "CONC", "lighted": true, "headingDegT": 90.0 },
+      { "ident": "15L/33R", "leIdent": "15L", "heIdent": "33R", "lengthFt": 9000, "widthFt": 150, "surface": "CONC", "lighted": true, "headingDegT": 150.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Houston Intercontinental ATIS", "frequencyMhz": 128.5 },
+      { "type": "GND", "description": "Houston Ground", "frequencyMhz": 121.85 },
+      { "type": "TWR", "description": "Houston Tower", "frequencyMhz": 118.7 },
+      { "type": "APP", "description": "Houston Approach", "frequencyMhz": 124.35 }
+    ],
+    "funFact": "George Bush Intercontinental has five runways arranged so that United Airlines can, in theory, run fully independent simultaneous triple approaches during instrument conditions, one of the few U.S. hubs able to do so."
+  },
+  {
+    "icao": "KLAS", "iata": "LAS", "name": "Harry Reid International Airport", "city": "Las Vegas", "country": "United States", "countryCode": "US", "region": "US-NV",
+    "latitude": 36.0840, "longitude": -115.1537, "elevationFt": 2181, "timezone": "America/Los_Angeles", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "01L/19R", "leIdent": "01L", "heIdent": "19R", "lengthFt": 9772, "widthFt": 150, "surface": "ASPH", "lighted": true, "headingDegT": 10.0 },
+      { "ident": "01R/19L", "leIdent": "01R", "heIdent": "19L", "lengthFt": 8985, "widthFt": 150, "surface": "ASPH", "lighted": true, "headingDegT": 10.0 },
+      { "ident": "07L/25R", "leIdent": "07L", "heIdent": "25R", "lengthFt": 9000, "widthFt": 150, "surface": "ASPH", "lighted": true, "headingDegT": 70.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Las Vegas ATIS", "frequencyMhz": 133.8 },
+      { "type": "GND", "description": "Las Vegas Ground", "frequencyMhz": 121.9 },
+      { "type": "TWR", "description": "Las Vegas Tower", "frequencyMhz": 119.9 },
+      { "type": "APP", "description": "Las Vegas Approach", "frequencyMhz": 125.9 }
+    ],
+    "funFact": "Harry Reid International sits directly beside the Las Vegas Strip, and its runway 01L/19R approach path gives arriving passengers one of the most famous skyline views in commercial aviation, right over the casino resorts."
+  },
+  {
+    "icao": "CYYZ", "iata": "YYZ", "name": "Toronto Pearson International Airport", "city": "Toronto", "country": "Canada", "countryCode": "CA", "region": "CA-ON",
+    "latitude": 43.6777, "longitude": -79.6248, "elevationFt": 569, "timezone": "America/Toronto", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "05/23", "leIdent": "05", "heIdent": "23", "lengthFt": 9697, "widthFt": 200, "surface": "ASPH", "lighted": true, "headingDegT": 50.0 },
+      { "ident": "06L/24R", "leIdent": "06L", "heIdent": "24R", "lengthFt": 11120, "widthFt": 200, "surface": "ASPH", "lighted": true, "headingDegT": 60.0 },
+      { "ident": "15L/33R", "leIdent": "15L", "heIdent": "33R", "lengthFt": 9088, "widthFt": 200, "surface": "ASPH", "lighted": true, "headingDegT": 150.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Pearson ATIS", "frequencyMhz": 128.35 },
+      { "type": "GND", "description": "Pearson Ground", "frequencyMhz": 121.9 },
+      { "type": "TWR", "description": "Pearson Tower", "frequencyMhz": 118.35 },
+      { "type": "APP", "description": "Toronto Approach", "frequencyMhz": 125.2 }
+    ],
+    "funFact": "Toronto Pearson is named after Lester B. Pearson, Canada's 14th Prime Minister and a Nobel Peace Prize laureate, and is Canada's busiest airport by a wide margin."
+  },
+  {
+    "icao": "CYVR", "iata": "YVR", "name": "Vancouver International Airport", "city": "Vancouver", "country": "Canada", "countryCode": "CA", "region": "CA-BC",
+    "latitude": 49.1967, "longitude": -123.1815, "elevationFt": 14, "timezone": "America/Vancouver", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "08L/26R", "leIdent": "08L", "heIdent": "26R", "lengthFt": 11500, "widthFt": 200, "surface": "ASPH", "lighted": true, "headingDegT": 80.0 },
+      { "ident": "08R/26L", "leIdent": "08R", "heIdent": "26L", "lengthFt": 9940, "widthFt": 200, "surface": "ASPH", "lighted": true, "headingDegT": 80.0 },
+      { "ident": "13/31", "leIdent": "13", "heIdent": "31", "lengthFt": 7300, "widthFt": 200, "surface": "WATER", "lighted": false, "headingDegT": 130.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Vancouver ATIS", "frequencyMhz": 132.6 },
+      { "type": "GND", "description": "Vancouver Ground", "frequencyMhz": 121.65 },
+      { "type": "TWR", "description": "Vancouver Tower", "frequencyMhz": 118.4 },
+      { "type": "APP", "description": "Vancouver Approach", "frequencyMhz": 125.5 }
+    ],
+    "funFact": "Vancouver International is one of the few airports in the world with a dedicated water runway, used by floatplane operators shuttling passengers to Victoria and other coastal communities."
+  },
+  {
+    "icao": "MMMX", "iata": "MEX", "name": "Mexico City International Airport", "city": "Mexico City", "country": "Mexico", "countryCode": "MX", "region": "MX-CMX",
+    "latitude": 19.4363, "longitude": -99.0721, "elevationFt": 7316, "timezone": "America/Mexico_City", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "05L/23R", "leIdent": "05L", "heIdent": "23R", "lengthFt": 12959, "widthFt": 164, "surface": "CONC", "lighted": true, "headingDegT": 50.0 },
+      { "ident": "05R/23L", "leIdent": "05R", "heIdent": "23L", "lengthFt": 12795, "widthFt": 164, "surface": "CONC", "lighted": true, "headingDegT": 50.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Mexico City ATIS", "frequencyMhz": 118.0 },
+      { "type": "GND", "description": "Mexico City Ground", "frequencyMhz": 121.9 },
+      { "type": "TWR", "description": "Mexico City Tower", "frequencyMhz": 118.35 },
+      { "type": "APP", "description": "Mexico Approach", "frequencyMhz": 125.0 }
+    ],
+    "funFact": "Sitting over 7,300 feet above sea level, Mexico City's thin air significantly reduces engine and wing performance, forcing many airliners to use longer takeoff rolls and accept reduced payloads on hot days."
+  },
+  {
+    "icao": "SBGR", "iata": "GRU", "name": "São Paulo/Guarulhos International Airport", "city": "São Paulo", "country": "Brazil", "countryCode": "BR", "region": "BR-SP",
+    "latitude": -23.4356, "longitude": -46.4731, "elevationFt": 2459, "timezone": "America/Sao_Paulo", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "09L/27R", "leIdent": "09L", "heIdent": "27R", "lengthFt": 12139, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 90.0 },
+      { "ident": "09R/27L", "leIdent": "09R", "heIdent": "27L", "lengthFt": 10990, "widthFt": 148, "surface": "ASPH", "lighted": true, "headingDegT": 90.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Guarulhos ATIS", "frequencyMhz": 127.05 },
+      { "type": "GND", "description": "Guarulhos Ground", "frequencyMhz": 121.85 },
+      { "type": "TWR", "description": "Guarulhos Tower", "frequencyMhz": 118.05 },
+      { "type": "APP", "description": "São Paulo Approach", "frequencyMhz": 125.9 }
+    ],
+    "funFact": "Guarulhos is South America's busiest airport by international passenger traffic, and its control tower coordinates traffic sharing tight airspace with the older, closer-in Congonhas Airport just a few miles from downtown São Paulo."
+  },
+  {
+    "icao": "SAEZ", "iata": "EZE", "name": "Ministro Pistarini International Airport", "city": "Buenos Aires", "country": "Argentina", "countryCode": "AR", "region": "AR-B",
+    "latitude": -34.8222, "longitude": -58.5358, "elevationFt": 67, "timezone": "America/Argentina/Buenos_Aires", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "11/29", "leIdent": "11", "heIdent": "29", "lengthFt": 10827, "widthFt": 148, "surface": "CONC", "lighted": true, "headingDegT": 110.0 },
+      { "ident": "17/35", "leIdent": "17", "heIdent": "35", "lengthFt": 9186, "widthFt": 148, "surface": "ASPH", "lighted": true, "headingDegT": 170.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Ezeiza ATIS", "frequencyMhz": 126.9 },
+      { "type": "GND", "description": "Ezeiza Ground", "frequencyMhz": 121.9 },
+      { "type": "TWR", "description": "Ezeiza Tower", "frequencyMhz": 118.1 },
+      { "type": "APP", "description": "Ezeiza Approach", "frequencyMhz": 119.7 }
+    ],
+    "funFact": "Ezeiza is commonly known by its old name among locals and pilots alike, even though its official name honors Juan Pistarini, the Argentine minister who championed the airport's construction in the 1940s."
+  },
+  {
+    "icao": "SCEL", "iata": "SCL", "name": "Arturo Merino Benítez International Airport", "city": "Santiago", "country": "Chile", "countryCode": "CL", "region": "CL-RM",
+    "latitude": -33.3930, "longitude": -70.7858, "elevationFt": 1555, "timezone": "America/Santiago", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "17L/35R", "leIdent": "17L", "heIdent": "35R", "lengthFt": 12467, "widthFt": 148, "surface": "ASPH", "lighted": true, "headingDegT": 170.0 },
+      { "ident": "17R/35L", "leIdent": "17R", "heIdent": "35L", "lengthFt": 11155, "widthFt": 148, "surface": "ASPH", "lighted": true, "headingDegT": 170.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Santiago ATIS", "frequencyMhz": 126.6 },
+      { "type": "GND", "description": "Santiago Ground", "frequencyMhz": 121.9 },
+      { "type": "TWR", "description": "Santiago Tower", "frequencyMhz": 118.1 },
+      { "type": "APP", "description": "Santiago Approach", "frequencyMhz": 125.3 }
+    ],
+    "funFact": "Flights out of Santiago climb quickly to clear the Andes, and the airport sits in a valley ringed by peaks over 20,000 feet, giving departing pilots one of the most dramatic mountain backdrops of any major hub."
+  },
+  {
+    "icao": "VHHH", "iata": "HKG", "name": "Hong Kong International Airport", "city": "Hong Kong", "country": "Hong Kong", "countryCode": "HK", "region": "HK-",
+    "latitude": 22.3080, "longitude": 113.9185, "elevationFt": 28, "timezone": "Asia/Hong_Kong", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "07L/25R", "leIdent": "07L", "heIdent": "25R", "lengthFt": 12467, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 70.0 },
+      { "ident": "07R/25L", "leIdent": "07R", "heIdent": "25L", "lengthFt": 12467, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 70.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Hong Kong ATIS", "frequencyMhz": 128.35 },
+      { "type": "GND", "description": "Hong Kong Ground", "frequencyMhz": 121.6 },
+      { "type": "TWR", "description": "Hong Kong Tower", "frequencyMhz": 118.4 },
+      { "type": "APP", "description": "Hong Kong Approach", "frequencyMhz": 119.1 }
+    ],
+    "funFact": "Hong Kong International was built almost entirely on reclaimed land off Chek Lap Kok island, replacing the legendarily tricky Kai Tak Airport where pilots once had to bank sharply between apartment blocks on final approach."
+  },
+  {
+    "icao": "ZBAA", "iata": "PEK", "name": "Beijing Capital International Airport", "city": "Beijing", "country": "China", "countryCode": "CN", "region": "CN-11",
+    "latitude": 40.0801, "longitude": 116.5846, "elevationFt": 116, "timezone": "Asia/Shanghai", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "01/19", "leIdent": "01", "heIdent": "19", "lengthFt": 12467, "widthFt": 148, "surface": "CONC", "lighted": true, "headingDegT": 10.0 },
+      { "ident": "18L/36R", "leIdent": "18L", "heIdent": "36R", "lengthFt": 12467, "widthFt": 148, "surface": "CONC", "lighted": true, "headingDegT": 180.0 },
+      { "ident": "18R/36L", "leIdent": "18R", "heIdent": "36L", "lengthFt": 11154, "widthFt": 148, "surface": "CONC", "lighted": true, "headingDegT": 180.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Beijing Capital ATIS", "frequencyMhz": 128.0 },
+      { "type": "GND", "description": "Beijing Ground", "frequencyMhz": 121.6 },
+      { "type": "TWR", "description": "Beijing Tower", "frequencyMhz": 118.5 },
+      { "type": "APP", "description": "Beijing Approach", "frequencyMhz": 125.65 }
+    ],
+    "funFact": "Beijing Capital's Terminal 3, opened for the 2008 Olympics, was for years the second-largest airport terminal building in the world, styled in red and gold to evoke a traditional Chinese dragon from above."
+  },
+  {
+    "icao": "ZSPD", "iata": "PVG", "name": "Shanghai Pudong International Airport", "city": "Shanghai", "country": "China", "countryCode": "CN", "region": "CN-31",
+    "latitude": 31.1443, "longitude": 121.8083, "elevationFt": 13, "timezone": "Asia/Shanghai", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "16L/34R", "leIdent": "16L", "heIdent": "34R", "lengthFt": 13123, "widthFt": 197, "surface": "CONC", "lighted": true, "headingDegT": 160.0 },
+      { "ident": "16R/34L", "leIdent": "16R", "heIdent": "34L", "lengthFt": 12467, "widthFt": 197, "surface": "CONC", "lighted": true, "headingDegT": 160.0 },
+      { "ident": "17L/35R", "leIdent": "17L", "heIdent": "35R", "lengthFt": 12467, "widthFt": 197, "surface": "CONC", "lighted": true, "headingDegT": 170.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Pudong ATIS", "frequencyMhz": 127.8 },
+      { "type": "GND", "description": "Pudong Ground", "frequencyMhz": 121.85 },
+      { "type": "TWR", "description": "Pudong Tower", "frequencyMhz": 118.5 },
+      { "type": "APP", "description": "Shanghai Approach", "frequencyMhz": 125.4 }
+    ],
+    "funFact": "The Shanghai Maglev Train connects Pudong Airport to the city, reaching speeds up to 431 km/h (268 mph), making the 30-kilometre trip in about eight minutes — faster than most short-haul flights taxi to their gate."
+  },
+  {
+    "icao": "ZGGG", "iata": "CAN", "name": "Guangzhou Baiyun International Airport", "city": "Guangzhou", "country": "China", "countryCode": "CN", "region": "CN-44",
+    "latitude": 23.3959, "longitude": 113.3079, "elevationFt": 50, "timezone": "Asia/Shanghai", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "01/19", "leIdent": "01", "heIdent": "19", "lengthFt": 12467, "widthFt": 148, "surface": "CONC", "lighted": true, "headingDegT": 10.0 },
+      { "ident": "02L/20R", "leIdent": "02L", "heIdent": "20R", "lengthFt": 11811, "widthFt": 148, "surface": "CONC", "lighted": true, "headingDegT": 20.0 },
+      { "ident": "02R/20L", "leIdent": "02R", "heIdent": "20L", "lengthFt": 11811, "widthFt": 148, "surface": "CONC", "lighted": true, "headingDegT": 20.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Guangzhou ATIS", "frequencyMhz": 127.5 },
+      { "type": "GND", "description": "Guangzhou Ground", "frequencyMhz": 121.65 },
+      { "type": "TWR", "description": "Guangzhou Tower", "frequencyMhz": 118.2 },
+      { "type": "APP", "description": "Guangzhou Approach", "frequencyMhz": 125.05 }
+    ],
+    "funFact": "Baiyun means 'White Cloud' in Chinese, named after the nearby White Cloud Mountains, and the airport has grown into one of the world's busiest cargo hubs thanks to Guangzhou's manufacturing base in the Pearl River Delta."
+  },
+  {
+    "icao": "RCTP", "iata": "TPE", "name": "Taiwan Taoyuan International Airport", "city": "Taipei", "country": "Taiwan", "countryCode": "TW", "region": "TW-TAO",
+    "latitude": 25.0777, "longitude": 121.2328, "elevationFt": 106, "timezone": "Asia/Taipei", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "05L/23R", "leIdent": "05L", "heIdent": "23R", "lengthFt": 12007, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 50.0 },
+      { "ident": "05R/23L", "leIdent": "05R", "heIdent": "23L", "lengthFt": 12467, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 50.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Taoyuan ATIS", "frequencyMhz": 128.55 },
+      { "type": "GND", "description": "Taoyuan Ground", "frequencyMhz": 121.6 },
+      { "type": "TWR", "description": "Taoyuan Tower", "frequencyMhz": 118.1 },
+      { "type": "APP", "description": "Taipei Approach", "frequencyMhz": 119.7 }
+    ],
+    "funFact": "Taiwan Taoyuan is the primary gateway for one of the world's densest air corridors, the short Taipei-Hong Kong and Taipei-Tokyo routes, which for years ranked among the busiest international flight paths on Earth."
+  },
+  {
+    "icao": "RKSI", "iata": "ICN", "name": "Incheon International Airport", "city": "Seoul", "country": "South Korea", "countryCode": "KR", "region": "KR-28",
+    "latitude": 37.4602, "longitude": 126.4407, "elevationFt": 23, "timezone": "Asia/Seoul", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "15L/33R", "leIdent": "15L", "heIdent": "33R", "lengthFt": 12303, "widthFt": 197, "surface": "CONC", "lighted": true, "headingDegT": 150.0 },
+      { "ident": "15R/33L", "leIdent": "15R", "heIdent": "33L", "lengthFt": 12303, "widthFt": 197, "surface": "CONC", "lighted": true, "headingDegT": 150.0 },
+      { "ident": "16/34", "leIdent": "16", "heIdent": "34", "lengthFt": 13123, "widthFt": 197, "surface": "CONC", "lighted": true, "headingDegT": 160.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Incheon ATIS", "frequencyMhz": 127.4 },
+      { "type": "GND", "description": "Incheon Ground", "frequencyMhz": 121.9 },
+      { "type": "TWR", "description": "Incheon Tower", "frequencyMhz": 118.2 },
+      { "type": "APP", "description": "Incheon Approach", "frequencyMhz": 119.4 }
+    ],
+    "funFact": "Incheon International is built on land reclaimed between two islands, Yeongjong and Yongyu, and has repeatedly topped global rankings for airport service quality thanks to amenities like an on-site ice rink and golf course."
+  },
+  {
+    "icao": "RJAA", "iata": "NRT", "name": "Narita International Airport", "city": "Tokyo", "country": "Japan", "countryCode": "JP", "region": "JP-12",
+    "latitude": 35.7647, "longitude": 140.3864, "elevationFt": 141, "timezone": "Asia/Tokyo", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "16L/34R", "leIdent": "16L", "heIdent": "34R", "lengthFt": 13123, "widthFt": 148, "surface": "ASPH", "lighted": true, "headingDegT": 160.0 },
+      { "ident": "16R/34L", "leIdent": "16R", "heIdent": "34L", "lengthFt": 8202, "widthFt": 148, "surface": "ASPH", "lighted": true, "headingDegT": 160.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Narita ATIS", "frequencyMhz": 128.75 },
+      { "type": "GND", "description": "Narita Ground", "frequencyMhz": 121.7 },
+      { "type": "TWR", "description": "Narita Tower", "frequencyMhz": 118.2 },
+      { "type": "APP", "description": "Tokyo Approach", "frequencyMhz": 120.5 }
+    ],
+    "funFact": "Narita's construction in the 1970s was so fiercely opposed by local farmers that one family's land holdout, in the middle of what became the airport, delayed a planned third runway extension for decades."
+  },
+  {
+    "icao": "VTBS", "iata": "BKK", "name": "Suvarnabhumi Airport", "city": "Bangkok", "country": "Thailand", "countryCode": "TH", "region": "TH-10",
+    "latitude": 13.6900, "longitude": 100.7501, "elevationFt": 5, "timezone": "Asia/Bangkok", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "01L/19R", "leIdent": "01L", "heIdent": "19R", "lengthFt": 13123, "widthFt": 197, "surface": "CONC", "lighted": true, "headingDegT": 10.0 },
+      { "ident": "01R/19L", "leIdent": "01R", "heIdent": "19L", "lengthFt": 12139, "widthFt": 197, "surface": "CONC", "lighted": true, "headingDegT": 10.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Suvarnabhumi ATIS", "frequencyMhz": 128.2 },
+      { "type": "GND", "description": "Suvarnabhumi Ground", "frequencyMhz": 121.9 },
+      { "type": "TWR", "description": "Suvarnabhumi Tower", "frequencyMhz": 118.4 },
+      { "type": "APP", "description": "Bangkok Approach", "frequencyMhz": 120.1 }
+    ],
+    "funFact": "Suvarnabhumi's name means 'Golden Land' in Sanskrit/Pali, a name personally chosen by Thailand's King Bhumibol Adulyadej, and its terminal features one of the tallest free-standing control towers in the world."
+  },
+  {
+    "icao": "WMKK", "iata": "KUL", "name": "Kuala Lumpur International Airport", "city": "Kuala Lumpur", "country": "Malaysia", "countryCode": "MY", "region": "MY-01",
+    "latitude": 2.7456, "longitude": 101.7099, "elevationFt": 69, "timezone": "Asia/Kuala_Lumpur", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "14L/32R", "leIdent": "14L", "heIdent": "32R", "lengthFt": 13123, "widthFt": 197, "surface": "CONC", "lighted": true, "headingDegT": 140.0 },
+      { "ident": "14R/32L", "leIdent": "14R", "heIdent": "32L", "lengthFt": 13123, "widthFt": 197, "surface": "CONC", "lighted": true, "headingDegT": 140.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "KLIA ATIS", "frequencyMhz": 128.7 },
+      { "type": "GND", "description": "KLIA Ground", "frequencyMhz": 121.7 },
+      { "type": "TWR", "description": "KLIA Tower", "frequencyMhz": 118.7 },
+      { "type": "APP", "description": "Kuala Lumpur Approach", "frequencyMhz": 125.1 }
+    ],
+    "funFact": "KLIA's terminal roof was designed by Japanese architect Kisho Kurokawa to resemble a rainforest canopy, and the airport encloses an actual man-made rainforest garden inside the satellite terminal for transiting passengers."
+  },
+  {
+    "icao": "RPLL", "iata": "MNL", "name": "Ninoy Aquino International Airport", "city": "Manila", "country": "Philippines", "countryCode": "PH", "region": "PH-00",
+    "latitude": 14.5086, "longitude": 121.0198, "elevationFt": 75, "timezone": "Asia/Manila", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "06/24", "leIdent": "06", "heIdent": "24", "lengthFt": 12261, "widthFt": 148, "surface": "ASPH", "lighted": true, "headingDegT": 60.0 },
+      { "ident": "13/31", "leIdent": "13", "heIdent": "31", "lengthFt": 8412, "widthFt": 148, "surface": "ASPH", "lighted": true, "headingDegT": 130.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Manila ATIS", "frequencyMhz": 128.2 },
+      { "type": "GND", "description": "Manila Ground", "frequencyMhz": 121.9 },
+      { "type": "TWR", "description": "Manila Tower", "frequencyMhz": 118.7 },
+      { "type": "APP", "description": "Manila Approach", "frequencyMhz": 119.7 }
+    ],
+    "funFact": "Ninoy Aquino International is named after assassinated Filipino senator Benigno 'Ninoy' Aquino Jr., who was shot on its tarmac in 1983 upon returning from exile, an event that helped spark the People Power Revolution."
+  },
+  {
+    "icao": "VIDP", "iata": "DEL", "name": "Indira Gandhi International Airport", "city": "New Delhi", "country": "India", "countryCode": "IN", "region": "IN-DL",
+    "latitude": 28.5562, "longitude": 77.1000, "elevationFt": 777, "timezone": "Asia/Kolkata", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "10/28", "leIdent": "10", "heIdent": "28", "lengthFt": 9840, "widthFt": 150, "surface": "ASPH", "lighted": true, "headingDegT": 100.0 },
+      { "ident": "11/29", "leIdent": "11", "heIdent": "29", "lengthFt": 12467, "widthFt": 150, "surface": "ASPH", "lighted": true, "headingDegT": 110.0 },
+      { "ident": "09/27", "leIdent": "09", "heIdent": "27", "lengthFt": 9022, "widthFt": 150, "surface": "ASPH", "lighted": true, "headingDegT": 90.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Delhi ATIS", "frequencyMhz": 128.4 },
+      { "type": "GND", "description": "Delhi Ground", "frequencyMhz": 121.65 },
+      { "type": "TWR", "description": "Delhi Tower", "frequencyMhz": 118.1 },
+      { "type": "APP", "description": "Delhi Approach", "frequencyMhz": 119.35 }
+    ],
+    "funFact": "Indira Gandhi International's Terminal 3 was, at the time of its 2010 opening for the Commonwealth Games, one of the largest airport terminal buildings in the world by floor area."
+  },
+  {
+    "icao": "VABB", "iata": "BOM", "name": "Chhatrapati Shivaji Maharaj International Airport", "city": "Mumbai", "country": "India", "countryCode": "IN", "region": "IN-MH",
+    "latitude": 19.0896, "longitude": 72.8656, "elevationFt": 39, "timezone": "Asia/Kolkata", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "09/27", "leIdent": "09", "heIdent": "27", "lengthFt": 12008, "widthFt": 148, "surface": "ASPH", "lighted": true, "headingDegT": 90.0 },
+      { "ident": "14/32", "leIdent": "14", "heIdent": "32", "lengthFt": 10761, "widthFt": 148, "surface": "ASPH", "lighted": true, "headingDegT": 140.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Mumbai ATIS", "frequencyMhz": 128.65 },
+      { "type": "GND", "description": "Mumbai Ground", "frequencyMhz": 121.7 },
+      { "type": "TWR", "description": "Mumbai Tower", "frequencyMhz": 118.15 },
+      { "type": "APP", "description": "Mumbai Approach", "frequencyMhz": 119.0 }
+    ],
+    "funFact": "Mumbai's two runways intersect rather than run parallel, meaning only one can be used for takeoffs or landings at a time, making it one of the busiest single-effective-runway airports in the world."
+  },
+  {
+    "icao": "OTHH", "iata": "DOH", "name": "Hamad International Airport", "city": "Doha", "country": "Qatar", "countryCode": "QA", "region": "QA-DA",
+    "latitude": 25.2731, "longitude": 51.6086, "elevationFt": 13, "timezone": "Asia/Qatar", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "16L/34R", "leIdent": "16L", "heIdent": "34R", "lengthFt": 15912, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 160.0 },
+      { "ident": "16R/34L", "leIdent": "16R", "heIdent": "34L", "lengthFt": 13124, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 160.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Doha ATIS", "frequencyMhz": 128.05 },
+      { "type": "GND", "description": "Doha Ground", "frequencyMhz": 121.75 },
+      { "type": "TWR", "description": "Doha Tower", "frequencyMhz": 118.5 },
+      { "type": "APP", "description": "Doha Approach", "frequencyMhz": 124.2 }
+    ],
+    "funFact": "Hamad International's main runway, at nearly 16,000 feet, is one of the longest commercial runways in the world, long enough to give a fully-loaded Airbus A380 comfortable margin in Doha's summer heat."
+  },
+  {
+    "icao": "LTFM", "iata": "IST", "name": "Istanbul Airport", "city": "Istanbul", "country": "Turkey", "countryCode": "TR", "region": "TR-34",
+    "latitude": 41.2753, "longitude": 28.7519, "elevationFt": 325, "timezone": "Europe/Istanbul", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "16L/34R", "leIdent": "16L", "heIdent": "34R", "lengthFt": 13123, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 160.0 },
+      { "ident": "16R/34L", "leIdent": "16R", "heIdent": "34L", "lengthFt": 13123, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 160.0 },
+      { "ident": "17L/35R", "leIdent": "17L", "heIdent": "35R", "lengthFt": 12467, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 170.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Istanbul ATIS", "frequencyMhz": 128.1 },
+      { "type": "GND", "description": "Istanbul Ground", "frequencyMhz": 121.9 },
+      { "type": "TWR", "description": "Istanbul Tower", "frequencyMhz": 118.6 },
+      { "type": "APP", "description": "Istanbul Approach", "frequencyMhz": 120.9 }
+    ],
+    "funFact": "Istanbul Airport was built to eventually support up to six runways and 200 million annual passengers, envisioned as one of the largest airports ever constructed, replacing Istanbul's older Atatürk Airport in 2019."
+  },
+  {
+    "icao": "UUEE", "iata": "SVO", "name": "Sheremetyevo International Airport", "city": "Moscow", "country": "Russia", "countryCode": "RU", "region": "RU-MOW",
+    "latitude": 55.9726, "longitude": 37.4146, "elevationFt": 622, "timezone": "Europe/Moscow", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "06L/24R", "leIdent": "06L", "heIdent": "24R", "lengthFt": 12139, "widthFt": 197, "surface": "CONC", "lighted": true, "headingDegT": 60.0 },
+      { "ident": "06R/24L", "leIdent": "06R", "heIdent": "24L", "lengthFt": 12467, "widthFt": 197, "surface": "CONC", "lighted": true, "headingDegT": 60.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Sheremetyevo ATIS", "frequencyMhz": 128.6 },
+      { "type": "GND", "description": "Sheremetyevo Ground", "frequencyMhz": 121.9 },
+      { "type": "TWR", "description": "Sheremetyevo Tower", "frequencyMhz": 118.6 },
+      { "type": "APP", "description": "Moscow Approach", "frequencyMhz": 120.9 }
+    ],
+    "funFact": "Sheremetyevo is named after the historic Sheremetyev noble family estate that once occupied the land, and served as the primary gateway for the Soviet Union's Aeroflot during the Cold War era."
+  },
+  {
+    "icao": "EDDM", "iata": "MUC", "name": "Munich Airport", "city": "Munich", "country": "Germany", "countryCode": "DE", "region": "DE-BY",
+    "latitude": 48.3538, "longitude": 11.7861, "elevationFt": 1487, "timezone": "Europe/Berlin", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "08L/26R", "leIdent": "08L", "heIdent": "26R", "lengthFt": 13123, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 80.0 },
+      { "ident": "08R/26L", "leIdent": "08R", "heIdent": "26L", "lengthFt": 13123, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 80.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Munich ATIS", "frequencyMhz": 118.1 },
+      { "type": "GND", "description": "Munich Ground", "frequencyMhz": 121.8 },
+      { "type": "TWR", "description": "Munich Tower", "frequencyMhz": 118.7 },
+      { "type": "APP", "description": "Munich Approach", "frequencyMhz": 120.15 }
+    ],
+    "funFact": "Munich Airport has its own on-site brewery and beer garden, Airbräu, letting passengers and even off-duty pilots sample freshly brewed Bavarian beer right beside the tarmac."
+  },
+  {
+    "icao": "EDDB", "iata": "BER", "name": "Berlin Brandenburg Airport", "city": "Berlin", "country": "Germany", "countryCode": "DE", "region": "DE-BB",
+    "latitude": 52.3667, "longitude": 13.5033, "elevationFt": 158, "timezone": "Europe/Berlin", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "07L/25R", "leIdent": "07L", "heIdent": "25R", "lengthFt": 13123, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 70.0 },
+      { "ident": "07R/25L", "leIdent": "07R", "heIdent": "25L", "lengthFt": 12467, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 70.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Berlin ATIS", "frequencyMhz": 127.005 },
+      { "type": "GND", "description": "Berlin Ground", "frequencyMhz": 121.75 },
+      { "type": "TWR", "description": "Berlin Tower", "frequencyMhz": 119.9 },
+      { "type": "APP", "description": "Berlin Approach", "frequencyMhz": 125.375 }
+    ],
+    "funFact": "Berlin Brandenburg famously took nearly a decade longer than planned to open, becoming a running joke in German media until it finally welcomed its first flights in October 2020, replacing both Tegel and Schönefeld airports."
+  },
+  {
+    "icao": "LEMD", "iata": "MAD", "name": "Adolfo Suárez Madrid–Barajas Airport", "city": "Madrid", "country": "Spain", "countryCode": "ES", "region": "ES-MD",
+    "latitude": 40.4936, "longitude": -3.5668, "elevationFt": 1998, "timezone": "Europe/Madrid", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "14L/32R", "leIdent": "14L", "heIdent": "32R", "lengthFt": 13943, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 140.0 },
+      { "ident": "14R/32L", "leIdent": "14R", "heIdent": "32L", "lengthFt": 13871, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 140.0 },
+      { "ident": "18L/36R", "leIdent": "18L", "heIdent": "36R", "lengthFt": 11483, "widthFt": 148, "surface": "ASPH", "lighted": true, "headingDegT": 180.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Barajas ATIS", "frequencyMhz": 129.3 },
+      { "type": "GND", "description": "Barajas Ground", "frequencyMhz": 121.7 },
+      { "type": "TWR", "description": "Barajas Tower", "frequencyMhz": 118.15 },
+      { "type": "APP", "description": "Madrid Approach", "frequencyMhz": 124.85 }
+    ],
+    "funFact": "Madrid–Barajas' Terminal 4 satellite building, designed by Richard Rogers, uses a rainbow of colored steel columns purely so pilots and ground staff can navigate the vast structure by color rather than signage alone."
+  },
+  {
+    "icao": "LIRF", "iata": "FCO", "name": "Leonardo da Vinci–Fiumicino Airport", "city": "Rome", "country": "Italy", "countryCode": "IT", "region": "IT-62",
+    "latitude": 41.8003, "longitude": 12.2389, "elevationFt": 15, "timezone": "Europe/Rome", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "07/25", "leIdent": "07", "heIdent": "25", "lengthFt": 12795, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 70.0 },
+      { "ident": "16L/34R", "leIdent": "16L", "heIdent": "34R", "lengthFt": 12139, "widthFt": 148, "surface": "ASPH", "lighted": true, "headingDegT": 160.0 },
+      { "ident": "16R/34L", "leIdent": "16R", "heIdent": "34L", "lengthFt": 10827, "widthFt": 148, "surface": "ASPH", "lighted": true, "headingDegT": 160.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Fiumicino ATIS", "frequencyMhz": 130.0 },
+      { "type": "GND", "description": "Fiumicino Ground", "frequencyMhz": 121.8 },
+      { "type": "TWR", "description": "Fiumicino Tower", "frequencyMhz": 118.7 },
+      { "type": "APP", "description": "Rome Approach", "frequencyMhz": 129.4 }
+    ],
+    "funFact": "Fiumicino is named after Renaissance polymath Leonardo da Vinci, who famously sketched some of the earliest known designs for flying machines centuries before powered flight became possible."
+  },
+  {
+    "icao": "LSZH", "iata": "ZRH", "name": "Zurich Airport", "city": "Zurich", "country": "Switzerland", "countryCode": "CH", "region": "CH-ZH",
+    "latitude": 47.4647, "longitude": 8.5492, "elevationFt": 1416, "timezone": "Europe/Zurich", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "10/28", "leIdent": "10", "heIdent": "28", "lengthFt": 10827, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 100.0 },
+      { "ident": "14/32", "leIdent": "14", "heIdent": "32", "lengthFt": 12139, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 140.0 },
+      { "ident": "16/34", "leIdent": "16", "heIdent": "34", "lengthFt": 8202, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 160.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Zurich ATIS", "frequencyMhz": 128.15 },
+      { "type": "GND", "description": "Zurich Ground", "frequencyMhz": 121.9 },
+      { "type": "TWR", "description": "Zurich Tower", "frequencyMhz": 118.1 },
+      { "type": "APP", "description": "Zurich Approach", "frequencyMhz": 120.35 }
+    ],
+    "funFact": "Zurich Airport's three intersecting runways mean its usable configuration changes with the wind, and noise-abatement curfews are so strict that most arrivals and departures pause overnight between 11:30pm and 6am."
+  },
+  {
+    "icao": "LOWW", "iata": "VIE", "name": "Vienna International Airport", "city": "Vienna", "country": "Austria", "countryCode": "AT", "region": "AT-3",
+    "latitude": 48.1103, "longitude": 16.5697, "elevationFt": 600, "timezone": "Europe/Vienna", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "11/29", "leIdent": "11", "heIdent": "29", "lengthFt": 11811, "widthFt": 148, "surface": "ASPH", "lighted": true, "headingDegT": 110.0 },
+      { "ident": "16/34", "leIdent": "16", "heIdent": "34", "lengthFt": 11811, "widthFt": 148, "surface": "ASPH", "lighted": true, "headingDegT": 160.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Vienna ATIS", "frequencyMhz": 128.525 },
+      { "type": "GND", "description": "Vienna Ground", "frequencyMhz": 121.73 },
+      { "type": "TWR", "description": "Vienna Tower", "frequencyMhz": 118.1 },
+      { "type": "APP", "description": "Vienna Approach", "frequencyMhz": 119.2 }
+    ],
+    "funFact": "Vienna International sits close enough to the borders of Slovakia and Hungary that its approach and departure routes are some of the most tightly coordinated cross-border airspace procedures in Europe."
+  },
+  {
+    "icao": "EIDW", "iata": "DUB", "name": "Dublin Airport", "city": "Dublin", "country": "Ireland", "countryCode": "IE", "region": "IE-D",
+    "latitude": 53.4213, "longitude": -6.2701, "elevationFt": 242, "timezone": "Europe/Dublin", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "10L/28R", "leIdent": "10L", "heIdent": "28R", "lengthFt": 8652, "widthFt": 148, "surface": "ASPH", "lighted": true, "headingDegT": 100.0 },
+      { "ident": "10R/28L", "leIdent": "10R", "heIdent": "28L", "lengthFt": 12008, "widthFt": 148, "surface": "ASPH", "lighted": true, "headingDegT": 100.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Dublin ATIS", "frequencyMhz": 130.85 },
+      { "type": "GND", "description": "Dublin Ground", "frequencyMhz": 121.8 },
+      { "type": "TWR", "description": "Dublin Tower", "frequencyMhz": 118.6 },
+      { "type": "APP", "description": "Dublin Approach", "frequencyMhz": 121.1 }
+    ],
+    "funFact": "Dublin Airport is the primary base of Ryanair, one of the world's largest low-cost carriers, and its newer north runway, opened in 2022, took over 20 years from initial approval to completion."
+  },
+  {
+    "icao": "ENGM", "iata": "OSL", "name": "Oslo Airport, Gardermoen", "city": "Oslo", "country": "Norway", "countryCode": "NO", "region": "NO-30",
+    "latitude": 60.1976, "longitude": 11.1004, "elevationFt": 681, "timezone": "Europe/Oslo", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "01L/19R", "leIdent": "01L", "heIdent": "19R", "lengthFt": 11811, "widthFt": 148, "surface": "ASPH", "lighted": true, "headingDegT": 10.0 },
+      { "ident": "01R/19L", "leIdent": "01R", "heIdent": "19L", "lengthFt": 9678, "widthFt": 148, "surface": "ASPH", "lighted": true, "headingDegT": 10.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Gardermoen ATIS", "frequencyMhz": 130.15 },
+      { "type": "GND", "description": "Gardermoen Ground", "frequencyMhz": 121.9 },
+      { "type": "TWR", "description": "Gardermoen Tower", "frequencyMhz": 120.3 },
+      { "type": "APP", "description": "Oslo Approach", "frequencyMhz": 133.4 }
+    ],
+    "funFact": "Oslo Gardermoen was one of the first airports in the world to pioneer widespread use of chemical-free, aircraft-friendly runway de-icing systems that recycle glycol from snowmelt to reduce environmental impact."
+  },
+  {
+    "icao": "ESSA", "iata": "ARN", "name": "Stockholm Arlanda Airport", "city": "Stockholm", "country": "Sweden", "countryCode": "SE", "region": "SE-AB",
+    "latitude": 59.6519, "longitude": 17.9186, "elevationFt": 137, "timezone": "Europe/Stockholm", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "01L/19R", "leIdent": "01L", "heIdent": "19R", "lengthFt": 10827, "widthFt": 147, "surface": "ASPH", "lighted": true, "headingDegT": 10.0 },
+      { "ident": "08/26", "leIdent": "08", "heIdent": "26", "lengthFt": 8202, "widthFt": 147, "surface": "ASPH", "lighted": true, "headingDegT": 80.0 },
+      { "ident": "01R/19L", "leIdent": "01R", "heIdent": "19L", "lengthFt": 9974, "widthFt": 147, "surface": "ASPH", "lighted": true, "headingDegT": 10.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Arlanda ATIS", "frequencyMhz": 129.35 },
+      { "type": "GND", "description": "Arlanda Ground", "frequencyMhz": 121.9 },
+      { "type": "TWR", "description": "Arlanda Tower", "frequencyMhz": 120.6 },
+      { "type": "APP", "description": "Stockholm Approach", "frequencyMhz": 126.65 }
+    ],
+    "funFact": "Stockholm Arlanda's three-runway layout was arranged specifically to permit two independent parallel operations plus a crosswind runway, letting the airport keep flowing smoothly through Scandinavia's shifting winter winds."
+  },
+  {
+    "icao": "EKCH", "iata": "CPH", "name": "Copenhagen Airport", "city": "Copenhagen", "country": "Denmark", "countryCode": "DK", "region": "DK-84",
+    "latitude": 55.6180, "longitude": 12.6560, "elevationFt": 17, "timezone": "Europe/Copenhagen", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "04L/22R", "leIdent": "04L", "heIdent": "22R", "lengthFt": 11811, "widthFt": 148, "surface": "ASPH", "lighted": true, "headingDegT": 40.0 },
+      { "ident": "04R/22L", "leIdent": "04R", "heIdent": "22L", "lengthFt": 9186, "widthFt": 148, "surface": "ASPH", "lighted": true, "headingDegT": 40.0 },
+      { "ident": "12/30", "leIdent": "12", "heIdent": "30", "lengthFt": 9843, "widthFt": 148, "surface": "ASPH", "lighted": true, "headingDegT": 120.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "Copenhagen ATIS", "frequencyMhz": 128.4 },
+      { "type": "GND", "description": "Copenhagen Ground", "frequencyMhz": 121.9 },
+      { "type": "TWR", "description": "Copenhagen Tower", "frequencyMhz": 118.1 },
+      { "type": "APP", "description": "Copenhagen Approach", "frequencyMhz": 119.6 }
+    ],
+    "funFact": "Copenhagen Airport sits on the island of Amager and is directly connected to the Øresund Bridge rail line, making it the only airport with a direct train link joining two countries, Denmark and Sweden, in under 40 minutes."
+  },
+  {
+    "icao": "FAOR", "iata": "JNB", "name": "O.R. Tambo International Airport", "city": "Johannesburg", "country": "South Africa", "countryCode": "ZA", "region": "ZA-GT",
+    "latitude": -26.1392, "longitude": 28.2460, "elevationFt": 5558, "timezone": "Africa/Johannesburg", "type": "large_airport", "isPopular": false,
+    "runways": [
+      { "ident": "03L/21R", "leIdent": "03L", "heIdent": "21R", "lengthFt": 14495, "widthFt": 197, "surface": "ASPH", "lighted": true, "headingDegT": 30.0 },
+      { "ident": "03R/21L", "leIdent": "03R", "heIdent": "21L", "lengthFt": 11155, "widthFt": 148, "surface": "ASPH", "lighted": true, "headingDegT": 30.0 }
+    ],
+    "frequencies": [
+      { "type": "ATIS", "description": "O.R. Tambo ATIS", "frequencyMhz": 124.7 },
+      { "type": "GND", "description": "O.R. Tambo Ground", "frequencyMhz": 121.9 },
+      { "type": "TWR", "description": "O.R. Tambo Tower", "frequencyMhz": 118.1 },
+      { "type": "APP", "description": "Johannesburg Approach", "frequencyMhz": 124.2 }
+    ],
+    "funFact": "O.R. Tambo sits nearly 5,600 feet above sea level, and its long main runway exists partly because the thin, high-altitude air on the Highveld requires much longer takeoff distances for heavy, fully-fueled long-haul jets."
+  }
+]
