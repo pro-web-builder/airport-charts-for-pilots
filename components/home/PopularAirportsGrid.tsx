@@ -1,12 +1,8 @@
-import { prisma } from "@/lib/prisma";
+import { getPopularAirports } from "@/lib/airports/data";
 import { PopularAirportCard } from "./PopularAirportCard";
 
-export async function PopularAirportsGrid() {
-  const airports = await prisma.airport.findMany({
-    where: { isPopular: true },
-    select: { icao: true, iata: true, name: true, city: true, country: true },
-    orderBy: { name: "asc" },
-  });
+export function PopularAirportsGrid() {
+  const airports = getPopularAirports();
 
   return (
     <section className="mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 lg:px-8">

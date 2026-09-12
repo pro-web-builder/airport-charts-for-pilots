@@ -1,4 +1,4 @@
-import { prisma } from "@/lib/prisma";
+import { getAllAirports } from "@/lib/airports/data";
 import type { AirportSearchResult } from "@/types/airport";
 
 const SCORE = {
@@ -32,35 +32,36 @@ function scoreAirport(
   return score;
 }
 
-export async function searchAirports(rawQuery: string, limit = 8): Promise<AirportSearchResult[]> {
+export function searchAirports(rawQuery: string, limit = 8): AirportSearchResult[] {
   const term = rawQuery.trim();
   if (!term) return [];
   const upper = term.toUpperCase();
+  const lower = term.toLowerCase();
 
-  const airports = await prisma.airport.findMany({
-    where: {
-      OR: [
-        { icao: { equals: upper } },
-        { iata: { equals: upper } },
-        { icao: { startsWith: upper } },
-        { iata: { startsWith: upper } },
-        { name: { contains: term, mode: "insensitive" } },
-        { city: { contains: term, mode: "insensitive" } },
-        { country: { contains: term, mode: "insensitive" } },
-      ],
-    },
-    select: {
-      id: true,
-      icao: true,
-      iata: true,
-      name: true,
-      city: true,
-      country: true,
-      latitude: true,
-      longitude: true,
-    },
-    take: 50,
-  });
+  // Mirrors the OR-clause the database query used to run, then hands the
+  // candidates to the same scorer as before.
+  const airports = getAllAirports()
+    .filter(
+      (a) =>
+        a.icao === upper ||
+        a.iata === upper ||
+        a.icao.startsWith(upper) ||
+        (a.iata?.startsWith(upper) ?? false) ||
+        a.name.toLowerCase().includes(lower) ||
+        a.city.toLowerCase().includes(lower) ||
+        a.country.toLowerCase().includes(lower)
+    )
+    .slice(0, 50)
+    .map<AirportSearchResult>((a) => ({
+      id: a.id,
+      icao: a.icao,
+      iata: a.iata,
+      name: a.name,
+      city: a.city,
+      country: a.country,
+      latitude: a.latitude,
+      longitude: a.longitude,
+    }));
 
   return airports
     .map((airport) => ({ airport, score: scoreAirport(airport, term, upper) }))

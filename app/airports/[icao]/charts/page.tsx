@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { prisma } from "@/lib/prisma";
+import { getAirportByIcao, getChartsForAirport } from "@/lib/airports/data";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { BackButton } from "@/components/layout/BackButton";
 import { ChartCategoryGrid } from "@/components/airport/ChartCategoryGrid";
@@ -22,19 +22,12 @@ export default async function AirportChartsPage({
   const { icao } = await params;
   const upperIcao = icao.toUpperCase();
 
-  const airport = await prisma.airport.findUnique({
-    where: { icao: upperIcao },
-    select: {
-      icao: true,
-      name: true,
-      charts: { select: { category: true } },
-    },
-  });
+  const airport = getAirportByIcao(upperIcao);
 
   if (!airport) notFound();
 
   const countsByCategory: Record<string, number> = {};
-  for (const chart of airport.charts) {
+  for (const chart of getChartsForAirport(airport.icao)) {
     countsByCategory[chart.category] = (countsByCategory[chart.category] ?? 0) + 1;
   }
 

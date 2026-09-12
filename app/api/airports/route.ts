@@ -6,6 +6,6 @@ export async function GET(request: NextRequest) {
   const limitParam = request.nextUrl.searchParams.get("limit");
   const limit = limitParam ? Math.min(Number(limitParam) || 8, 50) : 8;
 
-  const results = await searchAirports(q, limit);
+  const results = searchAirports(q, limit);
   return NextResponse.json({ results });
 }

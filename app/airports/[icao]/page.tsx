@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { prisma } from "@/lib/prisma";
+import { getAirportByIcao } from "@/lib/airports/data";
 import { getMetar, getTaf } from "@/lib/weather/aviationWeather";
 import { getSunTimes } from "@/lib/weather/sunTimes";
 import type { AirportWeather } from "@/types/weather";
@@ -14,20 +14,13 @@ import { WeatherPanel } from "@/components/airport/WeatherPanel";
 import { FunFactCard } from "@/components/airport/FunFactCard";
 import { LinkButton } from "@/components/ui/Button";
 
-async function getAirport(icao: string) {
-  return prisma.airport.findUnique({
-    where: { icao: icao.toUpperCase() },
-    include: { runways: true, frequencies: true, funFact: true },
-  });
-}
-
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ icao: string }>;
 }): Promise<Metadata> {
   const { icao } = await params;
-  const airport = await getAirport(icao);
+  const airport = getAirportByIcao(icao);
   if (!airport) return { title: "Airport Not Found" };
   return {
     title: `${airport.name} (${airport.icao})`,
@@ -41,7 +34,7 @@ export default async function AirportPage({
   params: Promise<{ icao: string }>;
 }) {
   const { icao } = await params;
-  const airport = await getAirport(icao);
+  const airport = getAirportByIcao(icao);
 
   if (!airport) notFound();
 
@@ -106,7 +99,7 @@ export default async function AirportPage({
 
       {airport.funFact && (
         <div className="mt-8">
-          <FunFactCard fact={airport.funFact.fact} />
+          <FunFactCard fact={airport.funFact} />
         </div>
       )}
 

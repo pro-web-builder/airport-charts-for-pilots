@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Airport Charts For Pilots
 
-## Getting Started
+A Next.js web app for searching airports worldwide and browsing their charts, runway
+and frequency data, live weather and local sun times. Built for pilots, student pilots,
+flight simulator users and aviation enthusiasts.
 
-First, run the development server:
+> **Not for real-world navigation.** The chart PDFs bundled with this app are
+> placeholders, not official aeronautical charts.
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open http://localhost:3000. **No environment variables or database are required** —
+airport data ships with the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Development server |
+| `npm run build` | Production build |
+| `npm run start` | Serve a production build |
+| `npm run lint` | ESLint |
+| `npm run brand:generate` | Regenerate favicons/PNGs from the source SVG logo |
+| `npm run charts:generate-placeholders` | Regenerate the placeholder chart PDFs |
 
-## Learn More
+The last two are one-off asset generators; their output is committed under `public/`, so
+you only need them when changing the logo or the placeholder chart design.
 
-To learn more about Next.js, take a look at the following resources:
+## Routes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Route | |
+| --- | --- |
+| `/` | Hero, search, popular airports |
+| `/airports` | Full airport list + search |
+| `/airports/[icao]` | Airport detail — map, runways, frequencies, METAR/TAF, fun fact |
+| `/airports/[icao]/charts` | Chart categories |
+| `/airports/[icao]/charts/[category]` | Charts in a category |
+| `/airports/[icao]/charts/[category]/[chartId]` | PDF viewer |
+| `/charts` · `/about` · `/contact` | Info pages |
+| `/favourites` | Saved airports (browser `localStorage`, no account needed) |
+| `/api/airports?q=` | Airport search |
+| `/api/weather/[icao]` | METAR, TAF and sun times |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Data
 
-## Deploy on Vercel
+- **Airports** — 50 curated airports in [`data/airports.json`](data/airports.json), loaded
+  into memory at startup by [`lib/airports/data.ts`](lib/airports/data.ts). Read-only, with
+  no per-user state, so it ships as a static asset rather than sitting in a database.
+- **Charts** — placeholder PDFs in `public/charts/placeholder/`, one per category, shared
+  across airports. Chart ids are derived (`<icao>-<category>`) so chart URLs stay stable
+  across deploys.
+- **Weather** — fetched live from [aviationweather.gov](https://aviationweather.gov)'s free
+  API, cached for 10 minutes. Sun times are computed locally with `suncalc`.
+- **Favourites and recent searches** — `localStorage` only. There are no accounts.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS v4 · Framer Motion ·
+Leaflet. Deployed on Vercel.

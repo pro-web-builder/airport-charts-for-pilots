@@ -55,9 +55,10 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col gap-3 border-t border-panel-border pt-6 text-xs text-foreground-faint sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-10 flex flex-col gap-3 border-t border-panel-border pt-6 text-xs text-foreground-faint lg:flex-row lg:items-center lg:justify-between">
           <p>&copy; {new Date().getFullYear()} Airport Charts For Pilots. For flight simulation and educational use.</p>
           <p>Chart data shown for v1 is placeholder. Not for real-world navigation.</p>
+          <p className="lg:shrink-0">Designed by Oliver T.</p>
         </div>
       </div>
     </footer>

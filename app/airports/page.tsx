@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { prisma } from "@/lib/prisma";
+import { getAllAirports } from "@/lib/airports/data";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { SearchAutocomplete } from "@/components/home/SearchAutocomplete";
 import { PopularAirportCard } from "@/components/home/PopularAirportCard";
@@ -9,11 +9,8 @@ export const metadata: Metadata = {
   description: "Browse and search airports from around the world.",
 };
 
-export default async function AirportsPage() {
-  const airports = await prisma.airport.findMany({
-    select: { icao: true, iata: true, name: true, city: true, country: true },
-    orderBy: { name: "asc" },
-  });
+export default function AirportsPage() {
+  const airports = getAllAirports();
 
   return (
     <div className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 lg:px-8">

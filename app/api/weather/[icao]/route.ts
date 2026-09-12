@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { prisma } from "@/lib/prisma";
+import { getAirportByIcao } from "@/lib/airports/data";
 import { getMetar, getTaf } from "@/lib/weather/aviationWeather";
 import { getSunTimes } from "@/lib/weather/sunTimes";
 import type { AirportWeather } from "@/types/weather";
@@ -11,10 +11,7 @@ export async function GET(
   const { icao } = await params;
   const upperIcao = icao.toUpperCase();
 
-  const airport = await prisma.airport.findUnique({
-    where: { icao: upperIcao },
-    select: { latitude: true, longitude: true, timezone: true },
-  });
+  const airport = getAirportByIcao(upperIcao);
 
   if (!airport) {
     return NextResponse.json({ error: "Airport not found" }, { status: 404 });

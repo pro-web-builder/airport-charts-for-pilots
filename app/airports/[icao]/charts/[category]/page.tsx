@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { prisma } from "@/lib/prisma";
+import { getAirportByIcao, getChartsByCategory } from "@/lib/airports/data";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { BackButton } from "@/components/layout/BackButton";
 import { ChartList } from "@/components/airport/ChartList";
@@ -32,29 +32,11 @@ export default async function ChartCategoryPage({
 
   if (!resolvedCategory) notFound();
 
-  const airport = await prisma.airport.findUnique({
-    where: { icao: upperIcao },
-    select: {
-      icao: true,
-      name: true,
-      charts: {
-        where: { category: resolvedCategory },
-        orderBy: { title: "asc" },
-      },
-    },
-  });
+  const airport = getAirportByIcao(upperIcao);
 
   if (!airport) notFound();
 
-  const charts: ChartSummary[] = airport.charts.map((c) => ({
-    id: c.id,
-    category: c.category,
-    title: c.title,
-    identifier: c.identifier,
-    fileUrl: c.fileUrl,
-    revisionDate: c.revisionDate ? c.revisionDate.toISOString() : null,
-    isPlaceholder: c.isPlaceholder,
-  }));
+  const charts: ChartSummary[] = getChartsByCategory(airport.icao, resolvedCategory);
 
   const categoryLabel = chartCategoryLabel(resolvedCategory);
 
